@@ -39,7 +39,6 @@ function onSubmitFormBtnClick(e) {
   if (e.currentTarget.email.value === '' || e.currentTarget.message.value === '') {
     alert('Please, fill in empty areas in order to submit form!');
   } else {
-    // const savedFormData = JSON.parse(localStorage.getItem(STORAGE_KEY));
     console.log('formData: ', formFeedbackData);
     e.currentTarget.reset();
     localStorage.removeItem(STORAGE_KEY);
